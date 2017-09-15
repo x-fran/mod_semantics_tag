@@ -1,0 +1,28 @@
+.semantic-tags {
+    padding-top: 10px;
+    text-align: center;
+}
+.zend-tag-cloud {
+    list-style: none;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.zend-tag-cloud ul {
+    text-align: center;
+}
+.zend-tag-cloud li {
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    display: inline-block;
+    zoom:1;
+    *display:inline;
+    margin: 5px;
+    line-height: 10px;
+}
+.zend-tag-cloud li a {
+    text-decoration: none;
+    color: black;
+    word-wrap: break-word;
+    cursor: default;
+}

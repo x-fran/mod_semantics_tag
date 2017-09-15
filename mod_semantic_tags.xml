@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Semantic Tags Cloud</name>
+    <author>iContentWeb</author>
+    <authorEmail>francisc@icontentweb.com</authorEmail>
+    <authorUrl>https://icontentweb.com</authorUrl>
+    <version>1.0.0</version>
+	<creationDate>May 2017</creationDate>
+    <copyright>Copyright (C)  2017. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <description>MOD_SEMANTIC_TAGS_XML_DESCRIPTION</description>
+    <files>
+        <filename>mod_semantic_tags.xml</filename>
+        <filename module="mod_semantic_tags">mod_semantic_tags.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>css/index.html</filename>
+        <filename>css/mod_semantic_tags.css</filename>
+    </files>
+    <folder>languages</folder>
+    <scriptfile>script.php</scriptfile>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB/en-GB.mod_semantic_tags.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_semantic_tags.sys.ini</language>
+    </languages>
+    <help key="JHELP_EXTENSIONS_MODULE_MANAGER_TAGS_POPULAR" />
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                        name="access_token"
+                        type="text"
+                        size="40"
+                        default=""
+                        label="MOD_SEMANTIC_TAGS_ACCESS_TOKEN_FIELD_LABEL"
+                        description="MOD_SEMANTIC_TAGS_ACCESS_TOKEN_FIELD_DESCRIPTION"
+                />
+                <field name="info_note" type="note" description="MOD_SEMANTIC_TAGS_INFO_NOTE" />
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+                />
+                <field
+                        name="moduleclass_sfx"
+                        type="textarea" rows="3"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+                />
+                <field
+                        name="cache"
+                        type="list"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC"
+                        default="1"
+                >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field
+                        name="cache_time"
+                        type="text"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+                        default="900"
+                />
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" name="semantictags" priority="1">https://icontentweb.com/updates/mod_semantic_tags_update.xml</server>
+    </updateservers>
+</extension>
