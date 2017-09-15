@@ -24,4 +24,4 @@ Joomla v3.*
 Installation
 ------------
 
-### Via Joomla Installer
+Via Joomla Installer
